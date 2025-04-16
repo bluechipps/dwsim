@@ -85,7 +85,7 @@
     </Reference>
     <Reference Include="DWSIM.ExtensionMethods.Eto, Version=8.9.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DistPackages\Windows\DWSIM.ExtensionMethods.Eto.dll</HintPath>
+      <HintPath>..\DWSIM.ExtensionMethods.Eto\bin\Debug\DWSIM.ExtensionMethods.Eto.dll</HintPath>
     </Reference>
     <Reference Include="Eto, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Eto.Forms.2.8.3\lib\netstandard2.0\Eto.dll</HintPath>
