@@ -1,8 +1,9 @@
 ﻿Imports DWSIM.ExtensionMethods
+Imports DWSIM.ExtensionMethods.Eto
 Imports DWSIM.Interfaces
 Imports DWSIM.SharedClasses
 Imports Eto.Forms
-Imports DWSIM.UI.Shared.Common
+Imports DWSIM.UI.Shared
 Imports DWSIM.UnitOperations.SpecialOps
 
 Public Class GraphicObjectControlPanelModeEditors
@@ -10,7 +11,8 @@ Public Class GraphicObjectControlPanelModeEditors
     Private Shared Function CreateInputForm() As Dialog
 
         Dim tb As New TextBox With {.Width = 100}
-        Dim f = CreateDialog(tb, "", 200, 60)
+
+        Dim f = Extensions2.CreateDialog(tb, "", 200, 60)
         Return f
 
     End Function
@@ -53,8 +55,8 @@ Public Class GraphicObjectControlPanelModeEditors
         Dim nf = fs.FlowsheetOptions.NumberFormat
         Dim units = fs.FlowsheetOptions.SelectedUnitSystem
 
-        Dim panel = GetDefaultContainer()
-        Dim form = CreateDialog(panel, PID.GraphicObject.Tag, 200, 200)
+        Dim panel = Extensions2.GetStandardContainer()
+        Dim form = Extensions2.CreateDialog(panel, PID.GraphicObject.Tag, 200, 200)
 
         Dim btn1, btn2 As Button
         Dim tb1, tb2, tb3 As TextBox
